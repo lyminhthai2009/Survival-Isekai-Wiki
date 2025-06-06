@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Isekai - Trang chủ</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font chữ (Nunito cho nội dung & Font Awesome cho icon) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Nút mở Menu (dấu 3 gạch) -->
+    <div id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Lớp phủ mờ khi menu mở -->
+    <div id="overlay"></div>
+
+    <!-- Thanh Menu trượt (Sidebar) -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button id="close-btn">×</button>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+            <li><a href="luat-le.html"><i class="fa-solid fa-gavel"></i> Luật Lệ</a></li>
+            <li><a href="https://discord.gg/your-discord-link" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></li>
+            <li class="features-menu">
+                <a href="#"><i class="fa-solid fa-star"></i> Các Tính Năng Chính <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <!-- DANH SÁCH TÍNH NĂNG SẼ ĐƯỢC JAVASCRIPT TỰ ĐỘNG CHÈN VÀO ĐÂY -->
+                <ul id="feature-list" class="submenu">
+                    <!-- Ví dụ: <li><a href="#"><i class="fa-solid fa-scroll"></i> Hệ thống nhiệm vụ</a></li> -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Nội dung chính của trang -->
+    <main class="main-content">
+        <header class="server-header">
+            <img src="images/logo.png" alt="Logo Server" class="server-logo">
+            <h1 class="server-title">SURVIVAL <span class="isekai-text">ISEKAI</span></h1>
+        </header>
+
+        <section class="action-buttons">
+            <a href="luat-le.html" class="btn btn-rules"><i class="fa-solid fa-book-open"></i> Đọc Luật Lệ</a>
+            <a href="https://discord.gg/your-discord-link" target="_blank" class="btn btn-discord"><i class="fa-brands fa-discord"></i> Tham gia Discord</a>
+        </section>
+
+        <section class="intro-section">
+            <h2>Giới thiệu về Server</h2>
+            <p>----------------------------------------------------</p>
+            <p>----------------------------------------------------</p>
+            <p>----------------------------------------------------</p>
+            <p>(Bạn hãy điền phần giới thiệu của mình vào đây nhé)</p>
+        </section>
+    </main>
+
+    <!-- Liên kết tới file JavaScript (luôn đặt ở cuối body) -->
+    <script src="js/main.js"></script>
+</body>
+</html>
